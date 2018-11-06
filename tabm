@@ -1,0 +1,19 @@
+oQuitter = ""
+print("Voici un outil de tables de multiplications!")
+while oQuitter != "oui":
+
+	oInput = input("Entrez un nombre : ") 
+
+	oBool = oInput.isdigit()
+
+	if oBool == True :
+
+		oInput = int(oInput)
+
+		for i in range(21):
+			print("{0} x {1} = {2}".format(i, oInput, i*oInput))
+
+		oQuitter = input("Voulez-vous quitter? oui/non : ")
+
+	elif oBool == False :
+		print("Erreur, vous n'avez pas entré un nombre!")
